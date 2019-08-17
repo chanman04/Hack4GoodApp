@@ -1,7 +1,13 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    //updated base Angular application to look to src folder as base folder
+    "baseUrl": "src",
+    //adding what path to look in, inside of the base folder
+    "paths":{
+      "@app/*": ["app/*"]
+    },
+    
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
